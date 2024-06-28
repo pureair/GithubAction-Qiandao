@@ -68,7 +68,7 @@ try:
     # 签到
     browser.find_element(
         By.XPATH,
-        "/html/body/section/main/div/div[3]/div/div[2]/div[2]/dl/dd[1]/div[2]/div[2]/div[2]/div/button",
+        "/html/body/section/main/div/div[3]/div/div[2]/div[2]/dl/dd[2]/div[2]/div[2]/div[2]/div/button",
     ).click()
     time.sleep(2)
 except Exception:
@@ -128,7 +128,7 @@ except Exception:
 try:
     browser.find_element(
         By.XPATH,
-        "/html/body/section/main/div/div[3]/div/div[2]/div[2]/dl/dd[1]/div[1]/div[2]/div[2]/div/button",
+        "/html/body/section/main/div/div[3]/div/div[2]/div[2]/dl/dd[2]/div[1]/div[2]/div[2]/div/button",
     ).click()
     time.sleep(4)
 except Exception:
@@ -147,7 +147,7 @@ except Exception:
     print("\n===> Err: < 显示当前积分 >")
     msg += "---- 无法显示积分! ----\n"
 
-Feishu_SendCardMsg(bot_id, title, msg)
+# Feishu_SendCardMsg(bot_id, title, msg)
 
 # 退出Chrome
 browser.quit()
